@@ -12,7 +12,7 @@ func main() {
 
 	app.Use(cors.New())
 
-	app.Static("/", "./public")
+	app.Static("/", "./client/dist/")
 
 	// res.json in express
 	app.Get("/users", func(c *fiber.Ctx) error {
